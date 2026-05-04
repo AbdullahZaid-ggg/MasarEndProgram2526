@@ -1,5 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 import Main from './pages/Main'
 import Search from './pages/Search'
 import About from './pages/About'
@@ -21,6 +23,8 @@ function App() {
           <Route path="/signup" element={<Signup />} />
         </Routes>
       </main>
+      <Footer />
+      <BackToTop />
     </>
   )
 }

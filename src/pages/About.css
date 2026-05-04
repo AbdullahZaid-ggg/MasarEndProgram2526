@@ -2,14 +2,17 @@
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
 }
 
 .about-hero {
   text-align: center;
   padding: 3rem 2rem;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.9) 0%, rgba(27, 122, 67, 0.9) 100%);
   color: white;
-  border-radius: 8px;
+  border-radius: 16px;
   margin-bottom: 3rem;
 }
 
@@ -25,12 +28,14 @@
 
 .mission, .values, .team {
   padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .about-content h2 {
-  color: #2c3e50;
+  color: #1b7a43;
   margin-bottom: 1rem;
 }
 
@@ -49,5 +54,5 @@
   content: "✓";
   position: absolute;
   left: 0;
-  color: #3498db;
+  color: #2ecc71;
 }

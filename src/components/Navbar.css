@@ -2,34 +2,67 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background: #2c3e50;
-  color: white;
+  padding: 0.8rem 3rem;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(27, 122, 67, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-logo a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #3498db;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1b7a43;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-logo a::before {
+  content: "🌿";
+  font-size: 1.5rem;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
   margin: 0;
   padding: 0;
 }
 
 .nav-links a {
-  color: white;
+  color: #333;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+  position: relative;
   transition: color 0.3s;
 }
 
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #2ecc71;
+  transition: width 0.3s;
+}
+
 .nav-links a:hover {
-  color: #3498db;
+  color: #1b7a43;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
 }
 
 .nav-auth {
@@ -38,29 +71,34 @@
 }
 
 .btn-login, .btn-signup {
-  padding: 0.5rem 1.5rem;
-  border-radius: 4px;
+  padding: 0.6rem 1.8rem;
+  border-radius: 25px;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
   transition: all 0.3s;
 }
 
 .btn-login {
   background: transparent;
-  border: 1px solid #3498db;
-  color: #3498db;
+  border: 2px solid #1b7a43;
+  color: #1b7a43;
 }
 
 .btn-login:hover {
-  background: #3498db;
+  background: #1b7a43;
   color: white;
+  transform: translateY(-2px);
 }
 
 .btn-signup {
-  background: #3498db;
+  background: linear-gradient(135deg, #2ecc71 0%, #1b7a43 100%);
   color: white;
-  border: 1px solid #3498db;
+  border: none;
+  box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3);
 }
 
 .btn-signup:hover {
-  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(46, 204, 113, 0.4);
 }

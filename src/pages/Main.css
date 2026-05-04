@@ -3,10 +3,12 @@
 }
 
 .hero {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, rgba(46, 204, 113, 0.9) 0%, rgba(27, 122, 67, 0.9) 100%);
   padding: 4rem 2rem;
   text-align: center;
   color: white;
+  border-radius: 16px;
+  margin: 1rem;
 }
 
 .hero-content h1 {
@@ -21,17 +23,22 @@
 
 .cta-button {
   display: inline-block;
-  padding: 1rem 2rem;
-  background: white;
-  color: #667eea;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #e8f5e9 100%);
+  color: #1b7a43;
   text-decoration: none;
-  border-radius: 4px;
-  font-weight: bold;
-  transition: transform 0.3s;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.3s;
+  border: 2px solid rgba(46, 204, 113, 0.5);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
 }
 
 .cta-button:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.4);
+  border-color: #2ecc71;
 }
 
 .features {
@@ -46,11 +53,13 @@
 .feature {
   text-align: center;
   padding: 2rem;
-  background: #f8f9fa;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .feature h3 {
-  color: #667eea;
+  color: #1b7a43;
   margin-bottom: 1rem;
 }
