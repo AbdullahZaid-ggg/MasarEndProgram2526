@@ -1,0 +1,66 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2c3e50;
+  color: white;
+}
+
+.nav-logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3498db;
+}
+
+.nav-auth {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-login, .btn-signup {
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-login {
+  background: transparent;
+  border: 1px solid #3498db;
+  color: #3498db;
+}
+
+.btn-login:hover {
+  background: #3498db;
+  color: white;
+}
+
+.btn-signup {
+  background: #3498db;
+  color: white;
+  border: 1px solid #3498db;
+}
+
+.btn-signup:hover {
+  background: #2980b9;
+}

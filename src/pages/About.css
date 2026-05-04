@@ -1,0 +1,53 @@
+.about-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+}
+
+.about-hero h1 {
+  margin-bottom: 1rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission, .values, .team {
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.about-content h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.values ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.values li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #3498db;
+}
