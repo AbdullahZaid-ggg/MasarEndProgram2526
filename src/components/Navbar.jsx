@@ -10,16 +10,21 @@ function Navbar() {
     <nav className="navbar">
       <div className="nav-logo">
         <Link to="/">
-          <img src={logo} alt="شعار تطوع65x" className="logo-img" />
+          <img src={logo} alt="شعار" className="logo-img" />
           <span className="logo-text">تطوع65x</span>
         </Link>
       </div>
-      
+
       <button className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
         <span className="bar"></span>
         <span className="bar"></span>
         <span className="bar"></span>
       </button>
+
+      <div className={`nav-auth ${isOpen ? 'mobile-show' : ''}`}>
+        <Link to="/login" className="btn-login btn-sm">دخول</Link>
+        <Link to="/signup" className="btn-signup btn-sm">تسجيل</Link>
+      </div>
 
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={() => setIsOpen(false)}>الرئيسية</Link></li>
@@ -28,11 +33,6 @@ function Navbar() {
         <li><Link to="/about" onClick={() => setIsOpen(false)}>من نحن</Link></li>
         <li><Link to="/contact" onClick={() => setIsOpen(false)}>اتصل بنا</Link></li>
       </ul>
-
-      <div className={`nav-auth ${isOpen ? 'active' : ''}`}>
-        <Link to="/login" className="btn-login">تسجيل الدخول</Link>
-        <Link to="/signup" className="btn-signup">أنشئ حساب</Link>
-      </div>
     </nav>
   )
 }
