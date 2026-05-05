@@ -84,3 +84,18 @@
 .auth-footer a:hover {
   text-decoration: underline;
 }
+
+.auth-form input.error {
+  border-color: #e74c3c;
+}
+
+.auth-form input.error:focus {
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.2);
+}
+
+.error-msg {
+  display: block;
+  color: #e74c3c;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}

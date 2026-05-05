@@ -4,11 +4,39 @@ import './Contact.css'
 function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' })
   const [submitted, setSubmitted] = useState(false)
+  const [errors, setErrors] = useState({})
+
+  const validateForm = () => {
+    const newErrors = {}
+
+    if (!formData.name.trim()) {
+      newErrors.name = 'الاسم مطلوب'
+    } else if (formData.name.length < 3) {
+      newErrors.name = 'الاسم يجب أن يكون 3 أحرف على الأقل'
+    }
+
+    if (!formData.email.trim()) {
+      newErrors.email = 'البريد الإلكتروني مطلوب'
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+      newErrors.email = 'البريد الإلكتروني غير صالح'
+    }
+
+    if (!formData.message.trim()) {
+      newErrors.message = 'الرسالة مطلوبة'
+    } else if (formData.message.length < 10) {
+      newErrors.message = 'الرسالة يجب أن تكون 10 أحرف على الأقل'
+    }
+
+    setErrors(newErrors)
+    return Object.keys(newErrors).length === 0
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setSubmitted(true)
-    setFormData({ name: '', email: '', message: '' })
+    if (validateForm()) {
+      setSubmitted(true)
+      setFormData({ name: '', email: '', message: '' })
+    }
   }
 
   return (
@@ -22,7 +50,7 @@ function Contact() {
           <p>لقد استلمنا رسالتك وسنتواصل معك قريباً.</p>
         </div>
       ) : (
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit} noValidate>
           <div className="form-group">
             <label htmlFor="name">الاسم</label>
             <input
@@ -30,8 +58,9 @@ function Contact() {
               id="name"
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              required
+              className={errors.name ? 'error' : ''}
             />
+            {errors.name && <span className="error-msg">{errors.name}</span>}
           </div>
           <div className="form-group">
             <label htmlFor="email">البريد الإلكتروني</label>
@@ -40,8 +69,9 @@ function Contact() {
               id="email"
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              required
+              className={errors.email ? 'error' : ''}
             />
+            {errors.email && <span className="error-msg">{errors.email}</span>}
           </div>
           <div className="form-group">
             <label htmlFor="message">الرسالة</label>
@@ -50,8 +80,9 @@ function Contact() {
               rows="5"
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              required
+              className={errors.message ? 'error' : ''}
             />
+            {errors.message && <span className="error-msg">{errors.message}</span>}
           </div>
           <button type="submit" className="submit-btn">أرسل الرسالة</button>
         </form>
