@@ -99,3 +99,57 @@
   font-size: 0.85rem;
   margin-top: 0.3rem;
 }
+
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 1rem;
+    min-height: calc(100vh - 60px);
+  }
+
+  .auth-card {
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .auth-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .auth-form .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .auth-form label {
+    font-size: 0.95rem;
+  }
+
+  .auth-form input {
+    padding: 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .auth-btn {
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .auth-footer {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth-card {
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .auth-card h1 {
+    font-size: 1.3rem;
+  }
+
+  .error-msg {
+    font-size: 0.8rem;
+  }
+}

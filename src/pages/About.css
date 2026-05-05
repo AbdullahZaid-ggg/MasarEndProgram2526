@@ -56,3 +56,53 @@
   left: 0;
   color: #2ecc71;
 }
+
+@media (max-width: 768px) {
+  .about-page {
+    padding: 1.5rem 1rem;
+    margin: 0.5rem;
+  }
+
+  .about-hero {
+    padding: 2rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-hero p {
+    font-size: 0.95rem;
+  }
+
+  .mission, .values, .team {
+    padding: 1.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .values li {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-page {
+    padding: 1rem 0.5rem;
+  }
+
+  .about-hero h1 {
+    font-size: 1.3rem;
+  }
+
+  .mission, .values, .team {
+    padding: 1rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.15rem;
+  }
+}
