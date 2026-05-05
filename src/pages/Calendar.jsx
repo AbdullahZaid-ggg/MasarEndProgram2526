@@ -8,6 +8,10 @@ const events = [
   { id: 4, title: 'تعليم الأطفال', date: '2026-05-18', location: 'جدة', type: 'education' },
   { id: 5, title: 'زيارة كبار السن', date: '2026-05-20', location: 'الرياض', type: 'social' },
   { id: 6, title: 'يوم الصحة', date: '2026-05-25', location: 'الدمام', type: 'health' },
+  { id: 7, title: 'مBerkute تعليمية', date: '2026-06-02', location: 'وادي عارة', type: 'education' },
+  { id: 8, title: 'توزيع طرود', date: '2026-06-05', location: 'وادي عارة', type: 'social' },
+  { id: 9, title: 'زراعة أشجار', date: '2026-06-10', location: 'وادي عارة', type: 'environmental' },
+  { id: 10, title: 'فحص صحي مجاني', date: '2026-06-15', location: 'وادي عارة', type: 'health' },
 ]
 
 const eventTypes = {

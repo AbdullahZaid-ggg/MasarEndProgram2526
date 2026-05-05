@@ -16,6 +16,7 @@ const locations = [
   { id: 3, name: 'مركز الدمام التنموي', lat: 26.4207, lng: 50.0888, type: 'الدمام' },
   { id: 4, name: 'مركز مكة الاجتماعي', lat: 21.3891, lng: 39.8579, type: 'مكة' },
   { id: 5, name: 'مركز المدينة التنموي', lat: 24.5247, lng: 39.5692, type: 'المدينة' },
+  { id: 6, name: 'مركز وادي عارة', lat: 32.4833, lng: 35.0500, type: 'وادي عارة' },
 ]
 
 function LocationMarker({ setSelectedLocation }) {
@@ -46,6 +47,7 @@ function LocationMap({ onLocationSelect }) {
     'الدمام': { lat: 26.4207, lng: 50.0888 },
     'مكة': { lat: 21.3891, lng: 39.8579 },
     'المدينة': { lat: 24.5247, lng: 39.5692 },
+    'وادي عارة': { lat: 32.4833, lng: 35.0500 },
   }
 
   const filteredLocations = selectedRegion 
@@ -81,6 +83,7 @@ function LocationMap({ onLocationSelect }) {
           <option value="الدمام">الدمام</option>
           <option value="مكة">مكة</option>
           <option value="المدينة">المدينة</option>
+          <option value="وادي عارة">وادي عارة</option>
         </select>
       </div>
       

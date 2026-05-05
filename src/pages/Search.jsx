@@ -11,6 +11,12 @@ const opportunities = [
   { id: 6, title: 'مساعد في ملجأ المشردين', organization: 'ملجأ المأوى الآمن', location: 'الدمام', category: 'السكن' },
   { id: 7, title: 'توزيع وجبات', organization: 'مطبخ الرحمة', location: 'مكة', category: 'الطعام والجوع' },
   { id: 8, title: 'معلم لغة عربية', organization: 'مركز تعليم النجاح', location: 'المدينة', category: 'التعليم' },
+  { id: 9, title: 'معلم لغة عربية', organization: 'مركز وادي عارة التعليمي', location: 'وادي عارة', category: 'التعليم' },
+  { id: 10, title: 'مساعد социальي', organization: 'جمعية وادي عارة الخيرية', location: 'وادي عارة', category: 'اجتماعي' },
+  { id: 11, title: 'رفيق لكبار السن', organization: 'دار رعاية وادي عارة', location: 'وادي عارة', category: 'كبار السن' },
+  { id: 12, title: 'تنظيف حي', organization: 'نظافة وادي عارة', location: 'وادي عارة', category: 'البيئة' },
+  { id: 13, title: 'توزيع طرود غذائية', organization: 'مصرف وادي عارة', location: 'وادي عارة', category: 'الطعام والجوع' },
+  { id: 14, title: 'معلم خصوصي', organization: 'مركز تفوق وادي عارة', location: 'وادي عارة', category: 'التعليم' },
 ]
 
 function Search() {
