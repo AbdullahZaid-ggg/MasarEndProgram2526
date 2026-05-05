@@ -20,8 +20,8 @@ function Footer() {
         </div>
         <div className="footer-section">
           <h4>تواصل معنا</h4>
-          <p>البريد الإلكتروني: info@volunteer.com</p>
-          <p>الهاتف: 966-XXX-XXXX</p>
+          <p>البريد الإلكتروني: fake@email.com</p>
+          <p>الهاتف: 972 000000000</p>
         </div>
       </div>
       <div className="footer-bottom">
