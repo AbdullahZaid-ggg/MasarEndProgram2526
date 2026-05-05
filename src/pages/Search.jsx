@@ -34,6 +34,23 @@ const opportunities = [
   { id: 29, title: 'وحدة التطوع البلدية', organization: 'بلدية جولس', location: 'جولس', category: 'مجتمع' },
   { id: 30, title: 'مجلس بسمة المحلي', organization: 'بسمة', location: 'برطعة', category: 'مجتمع' },
   { id: 31, title: 'نوادي موفيت', organization: 'موفيت', location: 'باقة الغربية', category: 'مسنين' },
+  { id: 32, title: 'مركز الطوارئ والاسعاف', organization: 'نجمة داود الحمراء', location: 'ام الفحم', category: 'صحة' },
+  { id: 33, title: 'مركز التدريب المهني', organization: 'معهد الحنون', location: 'ام الفحم', category: 'تعليم' },
+  { id: 34, title: 'مركز الأطفال ذوي الاحتياجات', organization: 'الامل للتأهيل', location: 'باقة الغربية', category: 'اجتماعي' },
+  { id: 35, title: 'مكتبة عامة عرعرة', organization: 'مكتبة عرعرة', location: 'عرعرة', category: 'تعليم' },
+  { id: 36, title: 'نادي رياضي عرعرة', organization: 'نادي عرعرة الرياضي', location: 'عرعرة', category: 'شباب' },
+  { id: 37, title: 'مركز صحة المرأة', organization: 'مبادرة أمان', location: 'كفرقرع', category: 'صحة' },
+  { id: 38, title: 'مركز علاج طبيعي', organization: 'العيادة الشعبية', location: 'كفرقرع', category: 'صحة' },
+  { id: 39, title: 'مخزن الطعام المجاني', organization: 'بنك الطعام', location: 'برطعة', category: 'اغاثة' },
+  { id: 40, title: 'مركز دعم الأسرة', organization: 'بيت العائلة', location: 'معاوية', category: 'اجتماعي' },
+  { id: 41, title: 'مركز تعليم الحاسوب', organization: 'Digital Wadi Ara', location: 'عرعرة', category: 'تعليم' },
+  { id: 42, title: 'مركز حماية الطفل', organization: 'محمية الطفل', location: 'ام الفحم', category: 'اجتماعي' },
+  { id: 43, title: 'وحدة التطوع - سالم', organization: 'مجلس سالم المحلي', location: 'سالم', category: 'مجتمع' },
+  { id: 44, title: 'وحدة التطوع - رمانة', organization: 'مجلس رمانة', location: 'رمانة', category: 'مجتمع' },
+  { id: 45, title: 'مركز ج人流', organization: 'ج人流 الثقافي', location: 'جيت', category: 'تعليم' },
+  { id: 46, title: 'جمعية الإغاثة الطبية', organization: 'الهلال الأحمر', location: 'وادي عارة', category: 'صحة' },
+  { id: 47, title: 'مركز المسنين عركز', organization: 'دار رعاية عركز', location: 'عركز', category: 'مسنين' },
+  { id: 48, title: 'وحدة التطوع - الفريديس', organization: 'مجلس الفريديس', location: 'الفريديس', category: 'مجتمع' },
 ]
 
 function Search() {
