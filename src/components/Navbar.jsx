@@ -15,17 +15,6 @@ function Navbar() {
         </Link>
       </div>
 
-      <button className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
-        <span className="bar"></span>
-        <span className="bar"></span>
-        <span className="bar"></span>
-      </button>
-
-      <div className={`nav-auth ${isOpen ? 'mobile-show' : ''}`}>
-        <Link to="/login" className="btn-login btn-sm">دخول</Link>
-        <Link to="/signup" className="btn-signup btn-sm">تسجيل</Link>
-      </div>
-
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
         <li><Link to="/" onClick={() => setIsOpen(false)}>الرئيسية</Link></li>
         <li><Link to="/search" onClick={() => setIsOpen(false)}>البحث</Link></li>
@@ -33,6 +22,17 @@ function Navbar() {
         <li><Link to="/about" onClick={() => setIsOpen(false)}>من نحن</Link></li>
         <li><Link to="/contact" onClick={() => setIsOpen(false)}>اتصل بنا</Link></li>
       </ul>
+
+      <div className="nav-auth">
+        <Link to="/login" className="btn-login">دخول</Link>
+        <Link to="/signup" className="btn-signup">تسجيل</Link>
+      </div>
+
+      <button className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
     </nav>
   )
 }
