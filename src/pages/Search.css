@@ -199,3 +199,132 @@
   color: #1b7a43;
   font-weight: 600;
 }
+
+.center-details-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 1rem;
+}
+
+.center-details-content {
+  background: white;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px) scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.center-details-content h2 {
+  color: #1b7a43;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.center-details-content .org-name {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.detail-row .label {
+  font-weight: 600;
+  color: #1b7a43;
+}
+
+.detail-row .value {
+  color: #333;
+  text-align: end;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+  transform: rotate(90deg);
+}
+
+.map-link-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background: linear-gradient(135deg, #2ecc71 0%, #1b7a43 100%);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.map-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(46, 204, 113, 0.4);
+}
+
+.details-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background: #1b7a43;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.details-btn:hover {
+  background: #2ecc71;
+}

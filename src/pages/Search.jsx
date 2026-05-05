@@ -143,11 +143,12 @@ function Search() {
           <p className="no-results">لم يتم العثور على مراكز</p>
         ) : (
           filtered.map(opp => (
-            <div key={opp.id} className="opportunity-card" onClick={() => handleCardClick(opp)}>
+            <div key={opp.id} className="opportunity-card">
               <h3>{opp.title}</h3>
               <p className="org">{opp.organization}</p>
               <p className="location">📍 {opp.location}</p>
               <span className="category">{opp.category}</span>
+              <button className="details-btn" onClick={() => handleCardClick(opp)}>عرض التفاصيل</button>
             </div>
           ))
         )}
