@@ -3,20 +3,12 @@ import LocationMap from '../components/LocationMap'
 import './Search.css'
 
 const opportunities = [
-  { id: 1, title: 'مساعد في مصرف الطعام', organization: 'مصرف الطعام المجتمعي', location: 'رياض', category: 'الطعام والجوع' },
-  { id: 2, title: 'مدرس رياضيات', organization: 'مركز تعليم الشباب', location: 'جدة', category: 'التعليم' },
-  { id: 3, title: 'متطوع في ملجأ الحيوانات', organization: 'ملجأ الحيوانات السعيدة', location: 'الدمام', category: 'الحيوانات' },
-  { id: 4, title: 'رفيق لكبار السن', organization: 'دار رعاية كبار الأيام', location: 'رياض', category: 'كبار السن' },
-  { id: 5, title: 'تنظيف بيئي', organization: 'مبادرة الأرض الخضراء', location: 'جدة', category: 'البيئة' },
-  { id: 6, title: 'مساعد في ملجأ المشردين', organization: 'ملجأ المأوى الآمن', location: 'الدمام', category: 'السكن' },
-  { id: 7, title: 'توزيع وجبات', organization: 'مطبخ الرحمة', location: 'مكة', category: 'الطعام والجوع' },
-  { id: 8, title: 'معلم لغة عربية', organization: 'مركز تعليم النجاح', location: 'المدينة', category: 'التعليم' },
-  { id: 9, title: 'معلم لغة عربية', organization: 'مركز وادي عارة التعليمي', location: 'وادي عارة', category: 'التعليم' },
-  { id: 10, title: 'مساعد социальي', organization: 'جمعية وادي عارة الخيرية', location: 'وادي عارة', category: 'اجتماعي' },
-  { id: 11, title: 'رفيق لكبار السن', organization: 'دار رعاية وادي عارة', location: 'وادي عارة', category: 'كبار السن' },
-  { id: 12, title: 'تنظيف حي', organization: 'نظافة وادي عارة', location: 'وادي عارة', category: 'البيئة' },
-  { id: 13, title: 'توزيع طرود غذائية', organization: 'مصرف وادي عارة', location: 'وادي عارة', category: 'الطعام والجوع' },
-  { id: 14, title: 'معلم خصوصي', organization: 'مركز تفوق وادي عارة', location: 'وادي عارة', category: 'التعليم' },
+  { id: 1, title: 'معلم لغة عربية', organization: 'مركز وادي عارة التعليمي', location: 'وادي عارة', category: 'التعليم' },
+  { id: 2, title: 'مساعد اجتماعي', organization: 'جمعية وادي عارة الخيرية', location: 'وادي عارة', category: 'اجتماعي' },
+  { id: 3, title: 'رفيق لكبار السن', organization: 'دار رعاية وادي عارة', location: 'وادي عارة', category: 'كبار السن' },
+  { id: 4, title: 'تنظيف حي', organization: 'نظافة وادي عارة', location: 'وادي عارة', category: 'البيئة' },
+  { id: 5, title: 'توزيع طرود غذائية', organization: 'مصرف وادي عارة', location: 'وادي عارة', category: 'الطعام والجوع' },
+  { id: 6, title: 'معلم خصوصي', organization: 'مركز تفوق وادي عارة', location: 'وادي عارة', category: 'التعليم' },
 ]
 
 function Search() {

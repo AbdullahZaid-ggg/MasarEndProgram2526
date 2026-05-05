@@ -11,12 +11,7 @@ L.Icon.Default.mergeOptions({
 })
 
 const locations = [
-  { id: 1, name: 'مركز الرياض التطوعي', lat: 24.7136, lng: 46.6753, type: 'رياض' },
-  { id: 2, name: 'مركز جدة الخيري', lat: 21.4858, lng: 39.1925, type: 'جدة' },
-  { id: 3, name: 'مركز الدمام التنموي', lat: 26.4207, lng: 50.0888, type: 'الدمام' },
-  { id: 4, name: 'مركز مكة الاجتماعي', lat: 21.3891, lng: 39.8579, type: 'مكة' },
-  { id: 5, name: 'مركز المدينة التنموي', lat: 24.5247, lng: 39.5692, type: 'المدينة' },
-  { id: 6, name: 'مركز وادي عارة', lat: 32.4833, lng: 35.0500, type: 'وادي عارة' },
+  { id: 1, name: 'مركز وادي عارة التطوعي', lat: 32.4833, lng: 35.0500, type: 'وادي عارة' },
 ]
 
 function LocationMarker({ setSelectedLocation }) {
@@ -42,11 +37,6 @@ function LocationMap({ onLocationSelect }) {
   const [selectedLocation, setSelectedLocation] = useState(null)
 
   const regionCoords = {
-    'رياض': { lat: 24.7136, lng: 46.6753 },
-    'جدة': { lat: 21.4858, lng: 39.1925 },
-    'الدمام': { lat: 26.4207, lng: 50.0888 },
-    'مكة': { lat: 21.3891, lng: 39.8579 },
-    'المدينة': { lat: 24.5247, lng: 39.5692 },
     'وادي عارة': { lat: 32.4833, lng: 35.0500 },
   }
 
@@ -78,11 +68,6 @@ function LocationMap({ onLocationSelect }) {
           className="region-select"
         >
           <option value="">كل المناطق</option>
-          <option value="رياض">الرياض</option>
-          <option value="جدة">جدة</option>
-          <option value="الدمام">الدمام</option>
-          <option value="مكة">مكة</option>
-          <option value="المدينة">المدينة</option>
           <option value="وادي عارة">وادي عارة</option>
         </select>
       </div>
