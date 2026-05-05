@@ -66,10 +66,21 @@ function MapController({ center }) {
   return null
 }
 
-function LocationMap({ onLocationSelect }) {
+function LocationMap({ onLocationSelect, opportunities = [] }) {
   const [selectedRegion, setSelectedRegion] = useState('')
   const [center, setCenter] = useState(null)
   const [selectedLocation, setSelectedLocation] = useState(null)
+
+  const allLocations = opportunities.length > 0 
+    ? opportunities.map((opp, idx) => ({
+        id: opp.id || idx,
+        name: opp.title,
+        lat: parseFloat(opp.mapLink?.split('=')[1]?.split(',')[0]) || 32.4500,
+        lng: parseFloat(opp.mapLink?.split('=')[1]?.split(',')[1]) || 34.9500,
+        type: opp.location,
+        data: opp
+      }))
+    : locations
 
   const regionCoords = {
     'ام الفحم': { lat: 32.5083, lng: 35.1547 },
@@ -86,8 +97,8 @@ function LocationMap({ onLocationSelect }) {
   }
 
   const filteredLocations = selectedRegion 
-    ? locations.filter(l => l.type === selectedRegion)
-    : locations
+    ? allLocations.filter(l => l.type === selectedRegion)
+    : allLocations
 
   const handleRegionChange = (region) => {
     setSelectedRegion(region)
@@ -100,7 +111,7 @@ function LocationMap({ onLocationSelect }) {
 
   const handleMarkerClick = (loc) => {
     setSelectedLocation(loc)
-    onLocationSelect(loc.type)
+    onLocationSelect(loc.type, loc.data)
   }
 
   return (
