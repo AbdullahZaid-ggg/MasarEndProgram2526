@@ -15,10 +15,10 @@ function Navbar() {
         </Link>
       </div>
       
-      <button className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-        <span className={isOpen ? 'bar open' : 'bar'}></span>
-        <span className={isOpen ? 'bar open' : 'bar'}></span>
-        <span className={isOpen ? 'bar open' : 'bar'}></span>
+      <button className={`menu-toggle ${isOpen ? 'active' : ''}`} onClick={() => setIsOpen(!isOpen)}>
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </button>
 
       <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
